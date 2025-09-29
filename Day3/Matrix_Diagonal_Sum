@@ -1,0 +1,19 @@
+class Solution {
+    public int diagonalSum(int[][] mat) {
+        int p_sum = 0;
+        int s_sum = 0;
+        for(int i=0; i<mat.length; i++){
+            p_sum+=mat[i][i];
+        }
+        int j = mat.length - 1;
+        for(int i=0; i<mat.length; i++){
+            if(i!=j){
+                s_sum+=mat[i][j];
+                
+            }
+            j--;
+        }
+
+        return p_sum+s_sum;
+    }
+}
