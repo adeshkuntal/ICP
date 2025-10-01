@@ -3,7 +3,9 @@ class Solution {
         int ans = 0;
         int n = s.length();
         for (char c = 'A'; c <= 'Z'; c++) {
-            int i = 0, j = 0, replaced = 0;
+            int i = 0;
+            int j = 0;
+            int replaced = 0;
             while (j < n) {
                 if (s.charAt(j) == c) {
                     j++;
